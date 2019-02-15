@@ -15,6 +15,10 @@ public class ProductCatalog {
         products.put(name, new Product(name, price));
     }
 
+    public void addProdWithQuan(String name, double price, int quant) {
+        products.put(name, new Product(name, price, quant));
+    }
+
     public Product getProduct(String name) {
         return products.get(name);
     }
